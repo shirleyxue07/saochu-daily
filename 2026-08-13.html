@@ -16,9 +16,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
 .section{margin-bottom:18px;border:1px solid #e8edf2;border-radius:10px;overflow:hidden}
 .section-title{font-size:16px;font-weight:700;padding:10px 16px;color:#fff}
 .section-title.policy{background:#3b6fa0}
-.section-title.party{background:#4a5568}
+.section-title.summary{background:#c62828}
 .section-title.rumor{background:#d97706}
 .section-title.official{background:#3b6fa0}
+.section-title.industry{background:#c62828}
 .section-body{padding:16px;background:#fff}
 .item{margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid #f0f2f5}
 .item:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
@@ -28,11 +29,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
 .i-src a{color:#c62828;text-decoration:none}
 .i-src a:hover{text-decoration:underline}
 .note{font-size:12px;color:#78909c;background:#f5f8fc;padding:8px 12px;border-radius:6px;margin-bottom:12px;border-left:3px solid #c62828}
+.note-sm{font-size:11px;color:#90a4ae;background:#fafcfd;padding:6px 12px;border-radius:6px;margin-top:12px;border-top:1px dashed #e0e6ec}
+.hl-box{background:#fdecea;border:1px solid #ef9a9a;border-radius:8px;padding:14px;margin-top:12px}
+.hl-box .hl-title{font-size:14px;font-weight:700;color:#c62828;margin-bottom:8px}
+.hl-box .hl-row{font-size:13px;color:#555;margin-bottom:3px;line-height:1.7}
+.hl-box .hl-row strong{color:#c62828}
 .rumor-warn{background:#fff8e1;border:1px solid #ffe082;color:#e65100;font-size:12px;padding:8px 12px;border-radius:6px;margin-bottom:12px}
 .footer{text-align:center;color:#90a4ae;font-size:12px;padding:20px 0;border-top:1px solid #ecf0f1;margin-top:20px}
 .analysis{background:#fafcfd;border:2px solid #e8edf2;border-radius:10px;padding:20px;margin-top:20px}
 .analysis h2{color:#c62828;font-size:18px;margin-bottom:12px}
 .analysis p{font-size:14px;color:#555;line-height:1.9;margin-bottom:12px}
+@media(max-width:640px){.hero h1{font-size:20px}}
 </style>
 </head>
 <body>
@@ -42,7 +49,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
   <div class="shield">🛡️</div>
   <h1>扫黑除恶专项舆情日报</h1>
   <div class="date">2026年8月13日（星期四）· 增量</div>
-  <div class="meta">采集时段：截止 8 月 13 日 09:00 ｜ 仅供内部参考</div>
+  <div class="meta">采集时段：截止 8 月 13 日 14:30 ｜ 仅供内部参考</div>
 </div>
 
 <!-- 政策风向 -->
@@ -55,35 +62,76 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
 
 <!-- 集中收网汇总 -->
 <div class="section">
-  <div class="section-title summary">🎯 集中收网汇总 · 各省第一轮战果</div>
+  <div class="section-title summary">🎯 集中收网汇总 · 各省第一轮战果（新增）</div>
   <div class="section-body">
 
     <div class="hl-box">
-      <div class="hl-title">📊 全国 + 五省第一轮收网战果对比</div>
-      <div class="hl-row" style="margin-bottom:4px"><strong>全国（公安部 8/10）：</strong>打掉团伙1000+，抓获8200+，破案5400+</div>
-      <div class="hl-row" style="margin-bottom:3px"><strong>广东：</strong>90团伙、1201人、353案（8/11通报）</div>
-      <div class="hl-row" style="margin-bottom:3px"><strong>山东：</strong>77团伙、580人、492案（8/13通报）</div>
-      <div class="hl-row" style="margin-bottom:3px"><strong>湖北：</strong>50+团伙、300+人、160+案（8/12通报）</div>
-      <div class="hl-row" style="margin-bottom:3px"><strong>辽宁：</strong>22团伙、106人、92案（8/13通报）</div>
-      <div class="hl-row"><strong>甘肃：</strong>4个涉恶组织、25人、27案（8/12通报）</div>
+      <div class="hl-title">📊 山东 · 第一轮集中收网（8月13日通报）</div>
+      <div class="hl-row" style="margin-bottom:4px"><strong>总战果：</strong>打掉犯罪团伙 <strong>77个</strong>，抓获 <strong>580人</strong>，破获刑案 <strong>492起</strong></div>
+      <div class="hl-row" style="margin-bottom:6px;padding:8px;background:#fff;border-left:3px solid #c62828">
+        <strong>聊城</strong> · 套路贷团伙 33人<br>
+        <span style="color:#888;font-size:12px">严查非法金融活动，打掉虚构事实收取高额费用、肆意认定违约的套路贷犯罪团伙</span>
+      </div>
+      <div class="hl-row" style="margin-bottom:6px;padding:8px;background:#fff;border-left:3px solid #e55">
+        <strong>青岛</strong> · 碰瓷敲诈 27人<br>
+        <span style="color:#888;font-size:12px">道路运输领域故意制造交通事故敲诈勒索</span>
+      </div>
+      <div class="hl-row" style="margin-bottom:6px;padding:8px;background:#fff;border-left:3px solid #e55">
+        <strong>烟台</strong> · 2个恶势力组织 21人<br>
+        <span style="color:#888;font-size:12px">夸大事实、捏造舆情，恶意举报投诉强揽工程</span>
+      </div>
+      <div class="hl-row" style="padding:8px;background:#fff;border-left:3px solid #e55">
+        <strong>菏泽</strong> · 4个团伙 20人<br>
+        <span style="color:#888;font-size:12px">假借"职业打假"之名行敲诈勒索之实</span>
+      </div>
+      <div class="i-src">来源：网易山东/山东省公安厅 <a href="https://sd.news.163.com/26/0813/08/L46RQ5S204379D5J_pa11y.html">原文</a></div>
     </div>
 
-    <div class="hl-box" style="margin-top:12px">
-      <div class="hl-title">🔍 本轮新增的催收相关案例（补充）</div>
+    <div class="hl-box">
+      <div class="hl-title">📊 辽宁 · 第一轮集中收网（8月13日通报）</div>
+      <div class="hl-row" style="margin-bottom:4px"><strong>总战果：</strong>打掉涉黑涉恶团伙 <strong>22个</strong>，抓获 <strong>106人</strong>，破获刑案 <strong>92起</strong>；累计开通举报电话141个、征集线索2000余条</div>
       <div class="hl-row" style="margin-bottom:6px;padding:8px;background:#fff;border-left:3px solid #c62828">
-        <strong>甘肃 · 兰州安宁区</strong> · 吕某某恶势力组织<br>
-        <span style="color:#888;font-size:12px">高利放贷，采用"软暴力"手段催收非法债务</span>
-      </div>
-      <div class="hl-row" style="margin-bottom:6px;padding:8px;background:#fff;border-left:3px solid #c62828">
-        <strong>辽宁 · 盘锦</strong> · 3人<br>
+        <strong>盘锦</strong> · 套路贷+软暴力催收 3人<br>
         <span style="color:#888;font-size:12px">实施网络"套路贷"并进行软暴力催收的犯罪团伙</span>
       </div>
-      <div class="hl-row" style="padding:8px;background:#fff;border-left:3px solid #c62828">
-        <strong>山东 · 聊城</strong> · 33人<br>
-        <span style="color:#888;font-size:12px">虚构事实收取高额费用、肆意认定违约的套路贷犯罪团伙</span>
+      <div class="hl-row" style="margin-bottom:6px;padding:8px;background:#fff;border-left:3px solid #e55">
+        <strong>沈阳</strong> · 色情敲诈 4人<br>
+        <span style="color:#888;font-size:12px">网络招嫖诱饵→高价非法性交易→虚构伤害事实软暴力敲诈</span>
       </div>
-      <div class="i-src">来源：辽宁公安厅/甘肃日报/网易山东 <a href="https://new.qq.com/rain/a/20260813A04VGM00">辽宁原文</a> ｜ <a href="https://www.tsrb.com.cn/gs/2026-08/12/content_300018053.htm">甘肃原文</a> ｜ <a href="https://sd.news.163.com/26/0813/08/L46RQ5S204379D5J_pa11y.html">山东原文</a></div>
+      <div class="hl-row" style="margin-bottom:6px;padding:8px;background:#fff;border-left:3px solid #e55">
+        <strong>鞍山</strong> · 碰瓷敲诈 7人 &nbsp;|&nbsp; <strong>丹东</strong> · 恶意索赔 5人<br>
+        <span style="color:#888;font-size:12px">引诱酒驾后制造事故敲诈；加油站买过期食品造谣索赔</span>
+      </div>
+      <div class="hl-row" style="padding:8px;background:#fff;border-left:3px solid #e55">
+        <strong>朝阳</strong> · 舆情敲诈 3人<br>
+        <span style="color:#888;font-size:12px">冒用新闻媒体身份，威胁曝光企业污染/违规问题敲诈</span>
+      </div>
+      <div class="i-src">来源：辽宁省公安厅 <a href="https://new.qq.com/rain/a/20260813A04VGM00">原文</a></div>
     </div>
+
+    <div class="hl-box">
+      <div class="hl-title">📊 甘肃 · 第一轮集中收网（8月12日通报）</div>
+      <div class="hl-row" style="margin-bottom:4px"><strong>总战果：</strong>打掉涉恶犯罪组织 <strong>4个</strong>，抓获 <strong>25人</strong>，破获案件 <strong>27起</strong></div>
+      <div class="hl-row" style="margin-bottom:6px;padding:8px;background:#fff;border-left:3px solid #c62828">
+        <strong>兰州 · 安宁区</strong> · 吕某某恶势力组织<br>
+        <span style="color:#888;font-size:12px">高利放贷，采用"软暴力"手段催收非法债务</span>
+      </div>
+      <div class="hl-row" style="margin-bottom:6px;padding:8px;background:#fff;border-left:3px solid #e55">
+        <strong>兰州 · 榆中县</strong> · 孙某某恶势力组织<br>
+        <span style="color:#888;font-size:12px">专门针对老年人制造交通事故敲诈勒索、诈骗</span>
+      </div>
+      <div class="hl-row" style="margin-bottom:6px;padding:8px;background:#fff;border-left:3px solid #e55">
+        <strong>张掖 · 甘州区</strong> · 陈某某恶势力组织<br>
+        <span style="color:#888;font-size:12px">在繁华市区、公共场所逞强耍横、寻衅滋事</span>
+      </div>
+      <div class="hl-row" style="padding:8px;background:#fff;border-left:3px solid #e55">
+        <strong>定西 · 岷县</strong> · 张某某恶势力组织<br>
+        <span style="color:#888;font-size:12px">无事生非、性侵女性、非法拘禁、抢劫</span>
+      </div>
+      <div class="i-src">来源：甘肃日报/新天水 <a href="https://www.tsrb.com.cn/gs/2026-08/12/content_300018053.htm">原文</a></div>
+    </div>
+
+    <div class="note-sm">备注：此前（8/12）已报道广东、湖北全省第一轮战果；今日新增山东、辽宁、甘肃。截至今日，共 5 个省份官媒公布第一轮扫黑除恶战果（广东 / 山东 / 湖北 / 辽宁 / 甘肃）。</div>
   </div>
 </div>
 
@@ -93,17 +141,16 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
   <div class="section-body">
     <div class="rumor-warn">特别说明：本板块内容均来自公开社媒/论坛/行业号，无官方证实，仅供参考。已获官方通报印证的条目已移除。</div>
     <div class="item"><div class="i-title">1. 传催收大厂 rzb 全国性解散（8月13日）</div><div class="i-content">催收行业交流群消息称，网传催收大厂 rzb 全国性解散，大批员工火速离职。rzb 推测为<strong style="color:#c62828">融智博</strong>，与此前"泰安融智博面临解散"传闻互相印证。（无官方信息）</div><div class="i-src">来源：微信公众号 拓界视野 <a href="https://mp.weixin.qq.com/s/9EN9tnfxdyx5bGlOhprCng">原文</a></div></div>
-    <div class="item"><div class="i-title">2. 传山东某 s 催收公司被端（8月13日）</div><div class="i-content">网传山东某 s 字头催收公司被端，好几个职场同一时间收网；具体公司名与人数未披露。（无官方信息）</div><div class="i-src">来源：微信公众号 拓界视野 <a href="https://mp.weixin.qq.com/s/9EN9tnfxdyx5bGlOhprCng">原文</a></div></div>
-    <div class="item"><div class="i-title">3. 传深圳某 j 催收公司疑有"信访"操作（8月12日）</div><div class="i-content">8月12日上午，深圳某大型信用卡催收公司被端。该公司收到风声后规定私人手机不许带入大楼、工作机收回、电脑全部重装、员工与外界失联。据爆料，该公司表面合规，实则主管带头组织"信访"——主管联系信访人员，为规避风险自己不付钱、让员工垫付后再私下回款，员工不肯就换人。（无官方信息，"信访"为原文缩写）</div><div class="i-src">来源：微信公众号 拓界视野 <a href="https://mp.weixin.qq.com/s/9EN9tnfxdyx5bGlOhprCng">原文</a></div></div>
-    <div class="item"><div class="i-title">4. 头部催收公司被端/约谈名单（8月13日）</div><div class="i-content">据不完全统计，头部催收公司 <strong style="color:#c62828">GBG、HC、RZB、SJY、LX、ZZ</strong> 均有职场被端或约谈。结合公开合作名单推测：<strong style="color:#c62828">SJY=深巨元、RZB=融智博、LX=联信（青岛联信集团）</strong>，HC 推测为浩传、<strong style="color:#c62828">GBG 推测为高柏集团</strong>，ZZ 待确认。另传<strong style="color:#c62828">武汉某公司批量离职500-1000人、安徽某公司批量离职</strong>（均以百人为单位）。（无官方信息）</div><div class="i-src">来源：微信公众号 催收情报猿 <a href="https://mp.weixin.qq.com/s/iOlRfbmEvL4LGE--3kaCFw">原文</a></div></div>
+    <div class="item"><div class="i-title">2. 传深巨元多地职场被端（8月12-13日）</div><div class="i-content">8月12日上午，深圳某 j 字头（推测<strong style="color:#c62828">深巨元</strong>）信用卡催收公司被端，现场三辆大巴车押送；公司规定私人手机不许带入大楼、工作机收回、电脑全部重装、员工与外界失联，被曝表面合规、实则主管带头组织"信访"让员工垫付费用规避风险。同日下午山东某前端（M1/M2项目）多个职场同一时间收网，涉案人员<strong style="color:#c62828">300人以上</strong>。（无官方信息）</div><div class="i-src">来源：微信公众号 拓界视野 <a href="https://mp.weixin.qq.com/s/9EN9tnfxdyx5bGlOhprCng">原文</a> ｜ 催收情报猿 <a href="https://mp.weixin.qq.com/s/iOlRfbmEvL4LGE--3kaCFw">原文</a></div></div>
+    <div class="item"><div class="i-title">3. 头部催收公司被端/约谈名单 + 批量离职（8月13日）</div><div class="i-content">据不完全统计，头部催收公司 <strong style="color:#c62828">GBG、HC、RZB、SJY、LX、ZZ</strong> 均有职场被端或约谈。结合公开合作名单推测：<strong style="color:#c62828">SJY=深巨元、RZB=融智博、LX=联信（青岛联信集团）</strong>，HC 推测为浩传、<strong style="color:#c62828">GBG 推测为高柏集团</strong>，ZZ 待确认。另传<strong style="color:#c62828">武汉某公司批量离职500-1000人、安徽某公司批量离职</strong>（均以百人为单位）。（无官方信息）</div><div class="i-src">来源：微信公众号 催收情报猿 <a href="https://mp.weixin.qq.com/s/iOlRfbmEvL4LGE--3kaCFw">原文</a></div></div>
   </div>
 </div>
 
-<!-- 行业解读 / 情绪观察 -->
+<!-- 自媒体观点 / 情绪观察 -->
 <div class="section">
-  <div class="section-title official">📌 行业解读 / 情绪观察</div>
+  <div class="section-title official">📌 自媒体观点 / 情绪观察</div>
   <div class="section-body">
-    <div class="note">收录行业号对严打的解读与从业者情绪观察，非事件爆料。</div>
+    <div class="note">收录行业自媒体对严打的解读与从业者情绪观察，非官方信息、非事件爆料。</div>
     <div class="item"><div class="i-title">1. 催收学习网：你合法合规催收，你慌什么（8月13日）</div><div class="i-content">系统拆解本轮严打边界：三大打击主体（依附套路贷/高利贷的职业化催收团伙、无资质外包催收、个人信息黑灰产）、软暴力涉恶四大特质、8月严打行为清单；并反复强调核心底线——<strong style="color:#c62828">严打违法催收 ≠ 欠债可以不还</strong>，合法债务仍须偿还。文章"合法合规不用慌、别自己吓自己"的安抚口吻，侧面印证<strong style="color:#c62828">从业者恐慌情绪</strong>正在蔓延。</div><div class="i-src">来源：微信公众号 催收学习网 <a href="https://mp.weixin.qq.com/s/st8f04WExMFY4dh7_VD0-Q">原文</a></div></div>
     <div class="item"><div class="i-title">2. 黄贵耕：非法催收背后的放贷陷阱（8月13日）</div><div class="i-content">指出<strong style="color:#c62828">套路贷、高息放贷才是催收犯罪的源头</strong>——"诱导放贷—恶意制造违约—外包非法催收"构成完整黑色产业链，催收只是非法放贷的下游工具。本轮全链条打击既查软暴力催收人员，更深挖放贷金主、平台运营方。据称全国已有<strong style="color:#c62828">2400 余家违规催收机构清退出场</strong>。</div><div class="i-src">来源：网易号 黄贵耕 <a href="https://dy.163.com/article/L45O0PQK0556M5OX.html">原文</a></div></div>
   </div>
@@ -120,15 +167,30 @@ body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei
   </div>
 </div>
 
+<!-- 黑猫投诉暴力催收前六名 -->
+<div class="section">
+  <div class="section-title industry">📉 黑猫投诉 · 催收公司暴力催收投诉前六名</div>
+  <div class="section-body">
+    <div class="note">黑猫投诉平台「暴力催收」投诉中，被直接点名的头部催收机构（累计投诉量）。注：用户投诉对象多为放贷平台，仅头部催收公司以自己的名义催收才被投诉到名下。</div>
+    <div class="item"><div class="i-title">1. 永雄集团 —— 2500+ 条</div><div class="i-content">湖南头部，曾 1.7 万员工，2023 年因暴力催收争议短暂停摆后复工，仍是投诉量最高的催收机构。</div></div>
+    <div class="item"><div class="i-title">2. 一诺银华 —— 1800+ 条</div><div class="i-content">上海老牌，多家银行核心合作方，2025 年预计营收超 8 亿元。</div></div>
+    <div class="item"><div class="i-title">3. CBC（北京）—— 1600+ 条</div><div class="i-content">信用卡催收传统龙头，外资背景。</div></div>
+    <div class="item"><div class="i-title">4. 深巨元 —— 1200+ 条</div><div class="i-content"><strong style="color:#c62828">即坊间传闻"多地职场被端"的那家</strong>，投诉量与传闻高度重合。</div></div>
+    <div class="item"><div class="i-title">5. 高柏中国 —— 900+ 条</div><div class="i-content"><strong style="color:#c62828">即坊间"GBG 被端"那家</strong>。</div></div>
+    <div class="item"><div class="i-title">6. 重庆信盟 —— 900+ 条</div><div class="i-content">马上消费金融关联催收方，澎湃新闻曾暗访曝光其"私联催收、暴力催收"。</div></div>
+    <div class="note-sm">来源：黑猫投诉平台公开数据，经"外资参股催收产业链分析"及媒体报道交叉整理。</div>
+  </div>
+</div>
+
 <!-- 最后 -->
 <div class="analysis">
   <h2>⚡ 最后</h2>
-  <p>今天最值得关注的信号是<strong style="color:#c62828">政法机关全链条收网</strong>的格局进一步坐实：公安部8月10日第一轮收网打头阵之后，<strong style="color:#c62828">最高检8月5日全国检察机关动员部署</strong>压阵，检察系统全面进入"打伞破网、打财断血"的实战状态，刑事打击的"网"已经织到了司法追诉环节。</p>
-  <p>各省战果正在陆续"交卷"：广东、山东、湖北、辽宁、甘肃五省官媒先后晒出第一轮成绩单，按"政治任务"要求，后续更多省份可能跟进"交卷"，<strong style="color:#c62828">第二波收网通报或持续密集释放</strong>。坊间层面，<strong style="color:#c62828">头部催收机构（深巨元、融智博、联信等）被传职场被端或约谈</strong>，且出现"批量离职500-1000人"的传闻——打击面正在从"拍苍蝇"转向"打老虎"，<strong style="color:#c62828">从业者恐慌与机构收缩</strong>的情绪进一步传导。</p>
-  <p>一个值得关注的<strong style="color:#c62828">潜在被端对象研判</strong>：顺着"给套路贷、高息贷等非持牌机构做催收"的线索往下找——这类甲方贷后管理松懈、外包合规要求宽松，外包方迫于业绩与利润压力，最可能发生违规操作，天然是下一波打击的高危对象。后续<strong style="color:#c62828">关键观测点</strong>：更多省份的战果通报；头部机构被端传闻的官方印证；公安部第二轮收网的时间与扩面方向。</p>
+  <p>今天的增量集中在三条线上：一是<strong style="color:#c62828">各省战果密集"交卷"</strong>——山东（77团伙/580人）、辽宁（22团伙/106人）、甘肃（4组织/25人）先后公布第一轮战果，累计 5 省官媒晒出成绩单，且各地案例里都出现了"软暴力催收"的身影（聊城套路贷、盘锦套路贷+软暴力催收、兰州高息放贷软暴力催收），说明<strong style="color:#c62828">催收类案件是本轮收网的核心打击目标之一</strong>。</p>
+  <p>二是<strong style="color:#c62828">头部催收机构收缩加剧</strong>：坊间传闻深巨元多地职场被端（涉案 300 人以上）、融智博全国解散、武汉/安徽批量离职——而黑猫投诉暴力催收榜单里，<strong style="color:#c62828">深巨元（1200+条）、高柏（900+条）、重庆信盟（900+条）恰好名列前茅</strong>，投诉量与"被端/约谈"传闻高度重合，印证"投诉量高企的催收机构"正是高危对象。</p>
+  <p>三是<strong style="color:#c62828">"依附违规放贷"的下游催收进入视野</strong>：以宜享花（IRR 超40%）为代表的高息贷甲方，其下游数十家催收外包方，是"全链条打击"的潜在靶子。后续<strong style="color:#c62828">关键观测点</strong>：更多省份的第二波战果通报；深巨元、融智博等被端传闻的官方印证；高息贷甲方（宜享花等）是否被进一步查处。</p>
 </div>
 
-<div class="footer">采集来源：最高人民检察院/拓界视野/催收情报猿/催收学习网/辽宁公安厅/甘肃日报/网易山东 | 仅供内部参考</div>
+<div class="footer">采集来源：最高人民检察院/山东公安厅/辽宁公安厅/甘肃日报/拓界视野/催收情报猿/催收学习网/界面新闻/黑猫投诉 | 仅供内部参考</div>
 
 </div>
 </body>
