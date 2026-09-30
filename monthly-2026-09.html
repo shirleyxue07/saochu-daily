@@ -67,8 +67,7 @@ td{padding:7px 6px;text-align:center;border-bottom:1px solid #f0f2f5;color:#555}
 td strong{color:#c62828}
 th:first-child,td:first-child{text-align:left}
 .tag{display:inline-block;font-size:11px;font-weight:700;color:#fff;background:#1565c0;padding:1px 8px;border-radius:3px;margin-right:6px;vertical-align:2px}
-.tag.red{background:#c62828}.tag.orange{background:#ef6c00}.tag.green{background:#2e7d32}.tag.purple{background:#5e35b1}.tag.teal{background:#00695c}
-.kw-box{display:inline-block;background:#fdecea;border:1px solid #ef9a9a;border-radius:20px;padding:4px 14px;margin:4px 6px 4px 0;font-size:13px;color:#c62828;font-weight:600}
+.tag.red{background:#c62828}.tag.orange{background:#ef6c00}.tag.green{background:#2e7d32}.tag.purple{background:#5e35b1}.tag.teal{background:#00695c}.tag.grey{background:#78909c}
 .note{font-size:12px;color:#78909c;background:#f5f8fc;padding:8px 12px;border-radius:6px;margin-bottom:12px;border-left:3px solid #c62828}
 .chip{display:inline-block;background:#f5f5f5;border:1px solid #e0e0e0;border-radius:6px;padding:2px 10px;margin:3px 4px 3px 0;font-size:12px;color:#555}
 .footer{text-align:center;color:#90a4ae;font-size:12px;padding:20px 0;margin-top:20px}
@@ -78,7 +77,9 @@ th:first-child,td:first-child{text-align:left}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .item{margin-bottom:12px}
 .item .it-h{font-size:14px;font-weight:700;color:#222;margin-bottom:4px}
-.item .it-b{font-size:13px;color:#555}
+.item .it-b{font-size:13px;color:#555;line-height:1.9}
+.src{font-size:12px;color:#90a4ae;margin-top:5px;line-height:1.7}
+.src a{color:#3b6fa0;text-decoration:underline}
 @media(max-width:640px){.ov-grid{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.bar-name{width:72px}}
 </style>
 </head>
@@ -112,11 +113,11 @@ th:first-child,td:first-child{text-align:left}
       <div class="tl-item orange"><div class="tl-date">9/6—9/11</div><div class="tl-title">省级战报密集 + 首批判决落地</div><div class="tl-desc">江西上饶 13 团 62 人、赣州 16 团 76 人、南昌 6 团 37 人；山东潍坊集中宣判 <strong style="color:#c62828">66 人获刑、涉案 1.18 亿元</strong>；宁夏法院集中宣判 2 起涉恶案（银川 12 人）</div></div>
       <div class="tl-item"><div class="tl-date">9/13—9/18</div><div class="tl-title">多地集中通报 + 「十类新型黑恶」落地图解</div><div class="tl-desc">山西省级通报 6 起典型案例 31 人；南昌通报全市 28 团 192 人（贷款催收领域 5 个恶势力团伙）；湖南发布"十类新型黑恶犯罪"图解，<strong style="color:#c62828">软暴力催收列第一类</strong>；广东湛江雷州 3 组织 15 人</div></div>
       <div class="tl-item green"><div class="tl-date">9/18—9/20</div><div class="tl-title">自律规范出台 + 上高 41 人</div><div class="tl-desc">五家协会联合发布《个人贷款业务明示综合融资成本自律规范》；江西宜春上高一次打掉 2 个"软暴力"催收团伙、抓获 <strong style="color:#c62828">41 人</strong>（出动近两百名警力）；山西忻州铲除宿某"软暴力"非法催收债务恶势力集团</div></div>
-      <div class="tl-item blue"><div class="tl-date">9/22—9/24</div><div class="tl-title">监管端出手 + 信息黑产重案</div><div class="tl-desc">国家金融监管总局广东监管局打击非法金融活动处处长<strong style="color:#c62828">杨谷方被查</strong>；山东滕州跨省捣毁侵犯公民个人信息黑产团伙 28 人、<strong style="color:#c62828">查获信息 4000 余万条</strong>；重庆银行停止投放三款助贷类产品</div></div>
-      <div class="tl-item"><div class="tl-date">9/25—9/27</div><div class="tl-title">景德镇乐平百名警力收网（一周内连端两个催收团伙）</div><div class="tl-desc">乐平公安 <strong>9 月 25 日清晨 5 时许</strong>、在市公安局党委书记<strong>陈齐梁</strong>调度指挥下抽调 <strong>100 余名</strong>精干警力分 <strong>20 多个抓捕组</strong>，打掉披"商务咨询公司"外衣的软暴力催收团伙 <strong style="color:#c62828">21 人</strong>（胡某某为首，袁某某、彭某某为骨干；招募成员开展催收话术培训、伪造法律文书、虚构身份；查获电脑 30 余台、手机 30 余部，均涉寻衅滋事罪刑拘）；<strong>此前 9 月 20 日扫黑攻坚队已跨省收网打掉同类团伙、刑拘 6 人</strong>（官方通报 9/26 12:49）；同窗口甘肃甘南合作市 9 人、山西运城河津 9 人</div></div>
+      <div class="tl-item blue"><div class="tl-date">9/22—9/24</div><div class="tl-title">监管端出手 + 信息黑产重案</div><div class="tl-desc">国家金融监督管理总局广东监管局打击非法金融活动处处长<strong style="color:#c62828">杨谷方被查</strong>；山东滕州跨省捣毁侵犯公民个人信息黑产团伙 28 人、<strong style="color:#c62828">查获信息 4000 余万条</strong>；重庆银行停止投放三款助贷类产品</div></div>
+      <div class="tl-item"><div class="tl-date">9/25—9/27</div><div class="tl-title">景德镇乐平百名警力收网（一周内连端两个催收团伙）</div><div class="tl-desc">乐平公安 <strong>9 月 25 日清晨 5 时许</strong>、在市公安局党委书记<strong>陈齐梁</strong>调度指挥下抽调 <strong>100 余名</strong>精干警力分 <strong>20 多个抓捕组</strong>，打掉披"商务咨询公司"外衣的软暴力催收团伙 <strong style="color:#c62828">21 人</strong>（胡某某为首，袁某某、彭某某为骨干；招募成员开展催收话术培训、伪造法律文书、虚构身份；查获电脑 30 余台、手机 30 余部）；<strong>此前 9 月 20 日扫黑攻坚队已跨省收网打掉同类团伙、刑拘 6 人</strong>（官方通报 9/26 12:49）；同窗口甘肃甘南合作市 9 人、山西运城河津 9 人</div></div>
       <div class="tl-item"><div class="tl-date">9/28</div><div class="tl-title">江苏南通 44 人案公布（当月单案涉众最广）</div><div class="tl-desc">南通开发区打掉"软暴力"催收恶势力组织 44 人，<strong style="color:#c62828">涉全国 5000 余名欠款人</strong>；湖南岳阳打掉 5 个团伙 40 人（其中 4 个系催收恶势力）；公安部部署专项斗争再推进</div></div>
       <div class="tl-item teal"><div class="tl-date">9/29</div><div class="tl-title">公安部公布八起典型案例 · 沈阳重判 25 年</div><div class="tl-desc">公安部公布八起新型涉黑恶犯罪典型案例，其中第①起为<strong style="color:#c62828">浙江嘉兴赵某等网络"套路贷"＋软暴力催收案</strong>；沈阳两级法院集中宣判 3 起，阮某某设"催收部"暴力催收数罪并罚<strong style="color:#c62828">一审 25 年</strong>；最高检披露 7 月以来批捕非法催收 17 件 63 人、起诉 10 件 25 人</div></div>
-      <div class="tl-item teal"><div class="tl-date">9/30</div><div class="tl-title">月末收官：吉林集中宣判 + 铜鼓"诉前调解中心"案</div><div class="tl-desc">吉林省高院组织三地法院集中宣判 5 件恶势力案 26 人；江西宜春铜鼓打掉挂"诉前调解中心"牌子的催收涉恶团伙 <strong style="color:#c62828">14 人</strong>（受滋扰群众 4000 余人）；靖安 8 人、郴州嘉禾 4 人；《金融产品网络营销管理办法》当日施行</div></div>
+      <div class="tl-item teal"><div class="tl-date">9/30</div><div class="tl-title">月末收官：吉林集中宣判 + 铜鼓「诉前调解中心」案</div><div class="tl-desc">吉林省高院组织三地法院集中宣判 5 件恶势力案 26 人；江西宜春铜鼓打掉挂"诉前调解中心"牌子的催收涉恶团伙 <strong style="color:#c62828">14 人</strong>（受滋扰群众 4000 余人）；靖安 8 人、郴州嘉禾 4 人；《金融产品网络营销管理办法》当日施行</div></div>
     </div>
   </div>
 </div>
@@ -176,12 +177,12 @@ th:first-child,td:first-child{text-align:left}
     </table>
     <div class="note" style="margin-top:14px;border-left-color:#00695c">⭐ 九月特征：<strong>江西以 21 起居首</strong>（宜春、南昌、赣州三地为重），单案人数从数人至 230 人不等；手法上「<strong>软暴力催收</strong>」为绝对主流，出现「<strong>诉前调解中心</strong>」「<strong>政府综合办事处</strong>」等<strong>冒用公权力名义</strong>的新变种，以及"商品分期""租机"等新型放贷外衣。</div>
     <div style="margin-top:12px;padding:12px 14px;background:#fdf6f6;border:1px solid #f5c6c6;border-radius:8px">
-      <div style="font-size:13px;font-weight:700;color:#c62828;margin-bottom:6px">📌 9/30 补充物证：收缴话术材料中首次出现「点名甲方」</div>
+      <div style="font-size:13px;font-weight:700;color:#c62828;margin-bottom:6px">📌 9/30 补充物证：收缴话术材料中出现「点名平台」</div>
       <div style="font-size:13px;color:#555;line-height:1.9">
-        江西宜春铜鼓案现场收缴的催收话术培训材料照片（拓界视野 9/30 16:18 发布）显示：该团伙坐席话术以「<strong>好分期合作方法律事务组</strong>」自报身份开场，材料并标注"<strong>第二通相当于第二天换身份外包施压</strong>"；配套"<strong>施压六式</strong>"——征信（失信限高、子女就学就业／考公）、取消分期（罚息与违约金）、联系家人朋友、联系户籍地村委及单位、三方机构上门走访、"人民法院在线服务"公众号；话术中另有"由调解中心介入""贷款律师函件下发""户籍地领取"等要素。
-        <div style="margin-top:6px">· <strong>好分期</strong>＝助贷平台，运营主体为<strong>北京微财科技有限公司</strong>（微财数科，法定代表人袁懋樟，注册地北京朝阳区）；助贷机构为厦门好微金融科技有限公司，放贷主体为重庆市黑卡小额贷款有限公司（微财持股 93.82%），旗下另有第三方催收公司北京好还科技；与 P2P 人人贷存在关联。</div>
-        <div style="margin-top:6px">· ⚠️ <strong>口径提示</strong>：该身份系团伙话术<strong>自报</strong>，且同一张材料明确写着"<strong>换身份外包施压</strong>"——即"某平台合作方"本身可能就是施压话术的组成部分，<strong>不能据此认定好分期委托了该团伙</strong>；须待官方通报或甲方回应方可确认。</div>
+        江西宜春铜鼓案现场收缴的催收话术培训材料照片显示：该团伙坐席话术以「<strong>好分期合作方法律事务组</strong>」自报身份开场，材料并标注"<strong>第二通相当于第二天换身份外包施压</strong>"；配套"<strong>施压六式</strong>"——征信（失信限高、子女就学就业／考公）、取消分期（罚息与违约金）、联系家人朋友、联系户籍地村委及单位、三方机构上门走访、"人民法院在线服务"公众号。
+        <div style="margin-top:6px">⚠️ <strong>口径提示</strong>：该身份系团伙话术<strong>自报</strong>，且同一张材料明确写着"<strong>换身份外包施压</strong>"——即"某平台合作方"本身可能就是施压话术的组成部分，<strong>不能据此认定好分期委托了该团伙</strong>；须待官方通报或甲方回应方可确认。</div>
       </div>
+      <div class="src">来源：拓界视野（公众号）2026-09-30 16:18《江西铜鼓某催收公司被端》，现场图 OCR 还原　<a href="https://mp.weixin.qq.com/s/uQ7mgeTRaC8t5X_gDaYSUw" target="_blank">原文</a></div>
     </div>
   </div>
 </div>
@@ -205,10 +206,6 @@ th:first-child,td:first-child{text-align:left}
       <div style="font-size:13px;font-weight:700;color:#00695c;margin-bottom:6px">📌 官方口径数据（最高检，9/29 发布）</div>
       <div style="font-size:13px;color:#555;line-height:1.9">7 月深化扫黑除恶专项斗争以来，全国检察机关受理审查逮捕涉黑涉恶 194 件 634 人、批捕 104 件 342 人、起诉 151 件 900 人；<strong style="color:#c62828">其中批捕非法催收 17 件 63 人、起诉 10 件 25 人</strong>——<strong>「起诉」数远小于「批捕」数</strong>，印证多数案件仍在侦查／审查起诉阶段。</div>
     </div>
-    <div style="margin-top:12px;padding:12px 14px;background:#fafcfd;border:1px solid #e0e6ec;border-radius:8px">
-      <div style="font-size:13px;font-weight:700;color:#555;margin-bottom:6px">跨月基数对比（8 月下旬，便于看趋势）</div>
-      <div style="font-size:13px;color:#555;line-height:1.9">· <strong>8/28</strong>：全国 <strong>11 地法院</strong>对 <strong>12 件</strong>黑恶案件集中宣判、<strong>163 名</strong>被告人获刑（无期至 10 个月）——8 月判决峰值；<br>· <strong>8/24</strong>：北京房山"催债中转站"案二审维持，6 人用 70 余部手机搭通讯转接平台为境外高利贷催收，<strong>全部以催收非法债务罪获刑</strong>（1 年 8 个月至 11 个月）——确立"<strong>仅提供通讯中转亦入罪</strong>"的判例边界。</div>
-    </div>
   </div>
 </div>
 
@@ -216,19 +213,39 @@ th:first-child,td:first-child{text-align:left}
 <div class="section">
   <div class="section-title judge">🏛️ 行政处罚 · 9 月罚单明细</div>
   <div class="section-body">
-    <div class="note">口径：9 月总局及派出机构公示罚单中，<strong>事由涉「贷后管理／催收／个人贷款」</strong>者列示如下——与上块「判决」合起来即为本月<strong>判罚全貌</strong>。目标机构与非目标机构一并列出，明细按月统一梳理。</div>
+    <div class="note">口径：9 月总局及派出机构公示罚单中，<strong>事由涉「贷后管理／催收／个人贷款／信用卡」</strong>者列示如下——与上块「判决」合起来即为本月<strong>判罚全貌</strong>。目标机构与非目标机构一并列出，明细按月统一梳理。</div>
+    <div style="font-size:13px;font-weight:700;color:#c62828;margin-bottom:8px">一、贷后管理类（案由明确含「贷后」）</div>
     <table>
-      <tr><th>公示 / 罚单日</th><th>机构</th><th>事由</th><th>金额</th></tr>
-      <tr><td>9/3</td><td>平安银行汽车消费金融中心烟台分中心</td><td>迟报案件</td><td>30 万元（时任总经理被警告）</td></tr>
-      <tr><td>9/8—9/11</td><td>天津银行北京分行</td><td><strong>贷后管理不到位</strong></td><td><strong>120 万元</strong></td></tr>
-      <tr><td>9/10</td><td>华晨东亚汽车金融</td><td>车贷三项违规</td><td><strong>130 万元</strong>（时任总经理被警告并罚 5 万）</td></tr>
-      <tr><td>9/11</td><td>广东华兴银行江门分行</td><td><strong>贷后管理不尽职</strong></td><td>48 万元</td></tr>
-      <tr><td>9/18</td><td>江西龙南农村商业银行</td><td><strong>贷后管理不到位</strong>等</td><td><strong>100 万元</strong></td></tr>
+      <tr><th>公示日</th><th>机构</th><th>案由</th><th>金额</th></tr>
+      <tr><td>9/3</td><td>农业银行海西分行</td><td>贷后管理不到位、信贷资金被挪用</td><td>25 万元</td></tr>
+      <tr><td>9/4</td><td>中国农业银行湖北省分行</td><td>贷后管理不到位致贷款资金回流；贷后管理不尽职、流贷被挪用</td><td><strong>300 万元</strong></td></tr>
+      <tr><td>9/8—9/11</td><td>天津银行北京分行</td><td>贷后管理不到位</td><td><strong>120 万元</strong></td></tr>
+      <tr><td>9/11</td><td>广东华兴银行江门分行</td><td>贷后管理不尽职</td><td>48 万元</td></tr>
+      <tr><td>9/18</td><td>江西龙南农村商业银行</td><td>贷后管理不到位等</td><td><strong>100 万元</strong></td></tr>
+      <tr><td>9/21</td><td>浦发银行广州分行</td><td>违规收费、<strong>贷后管理不尽职</strong>、贷款风险分类不准确</td><td>155 万元</td></tr>
+      <tr><td>9/22</td><td>淮南通商农商行八公山支行</td><td>超越权限审批贷款、<strong>贷后管理不到位</strong></td><td>85 万元</td></tr>
+      <tr><td>9/22</td><td>大荔县农村信用合作联社</td><td>贷前调查不尽职、<strong>贷后检查不到位</strong></td><td>80 万元</td></tr>
+      <tr><td>9/24</td><td>交通银行平顶山分行</td><td>按揭审查不严、<strong>贷后管理不到位</strong>致贷款资金回流借款人</td><td>40 万元</td></tr>
+      <tr><td>9/24</td><td>中国银行鹤壁分行</td><td><strong>贷后管理不到位</strong>致信贷资金被挪用等</td><td>110 万元</td></tr>
+      <tr><td>9/24</td><td>山东临沂罗庄农商行桥头支行</td><td><strong>汽车贷款贷后管理不到位</strong></td><td>40 万元</td></tr>
       <tr><td>9/30</td><td>招商银行吕梁分行</td><td><strong>贷后管理不尽责</strong>、贷款资金被挪用</td><td>60 万元</td></tr>
+      <tr><td>9/3</td><td>平安银行汽车消费金融中心烟台分中心</td><td>迟报案件</td><td>30 万元（时任总经理被警告）</td></tr>
+      <tr><td>9/10</td><td>华晨东亚汽车金融</td><td>车贷三项违规</td><td><strong>130 万元</strong>（时任总经理被警告并罚 5 万）</td></tr>
       <tr><td>9 月</td><td>四川唯品富邦消费金融</td><td><strong>贷后管理不到位</strong>、贷款资金被挪用</td><td>25 万元</td></tr>
     </table>
-    <div class="note" style="margin-top:12px;border-left-color:#00695c">⭐ 观察：9 月罚单事由高度集中于「<strong>贷后管理不到位／不尽责</strong>」——7 张中有 <strong>5 张</strong>直接以此为案由，反映监管在催收整治背景下对<strong>贷后环节</strong>的问责明显加码。金额最大者为华晨东亚汽车金融 <strong>130 万元</strong>（车贷条线）。</div>
-    <div class="note" style="margin-top:10px">9/30 窗口总局派出机构另披露 6 份罚单，案由为贷款"三查"不尽职／贷款管理不审慎／贷前调查不尽职等（<strong>非贷后事由</strong>，故未入上表）：<strong>杭州银行 975 万元</strong>、<strong>工行湖北省分行 405 万元</strong>、湖北银行 285 万元、中信银行兰州分行 140 万元、苏州银行常州分行 100 万元、工行重庆荣昌支行 65 万元。</div>
+    <div style="font-size:13px;font-weight:700;color:#c62828;margin:16px 0 8px">二、其他涉个人贷款 / 信用卡 / 内控类</div>
+    <table>
+      <tr><th>公示日</th><th>机构</th><th>案由</th><th>金额 / 处理</th></tr>
+      <tr><td>9/1</td><td>广发银行信用卡中心</td><td>信用卡业务管理不到位、风险分类不准确</td><td><strong>135 万元</strong>（宋君玲警告罚 5 万）</td></tr>
+      <tr><td>9/11</td><td>六盘水六枝富民村镇银行</td><td>贷款"三查"不尽职、信贷资金被挪用</td><td>20 万元</td></tr>
+      <tr><td>9/16</td><td>北银消费金融</td><td>信用信息违规</td><td>5.9 万元</td></tr>
+      <tr><td>9/23</td><td>建行邵阳市分行（聂承娟）</td><td>个贷业务内控管理和风险管控不到位、员工行为管理不到位</td><td><strong>禁业 20 年</strong></td></tr>
+      <tr><td>9/24</td><td>中国银行河南省分行</td><td>违规发放贷款延缓风险暴露；发放虚假用途个人贷款；<strong>信用卡业务内控执行不到位</strong></td><td>120 万元</td></tr>
+      <tr><td>9/24</td><td>中国银行郑州文化支行 / 商丘分行 / 郑州自贸区分行</td><td>发放虚假用途个人贷款 / 违规发放贷款延缓风险暴露</td><td>30 万 / 35 万 / 30 万元</td></tr>
+      <tr><td>9/24</td><td>广东乐昌农商行</td><td>员工行为管理不到位、贷款业务严重违反审慎经营规则</td><td>50 万元</td></tr>
+      <tr><td>9/30</td><td>杭州银行</td><td>流动资金贷款、个人贷款、项目贷款管理不审慎等</td><td><strong>975 万元</strong></td></tr>
+    </table>
+    <div class="note" style="margin-top:12px;border-left-color:#00695c">⭐ 观察：<strong>「贷后管理不到位／不尽职」是本月的绝对主案由</strong>——15 张贷后类罚单中 13 张直接以此表述；涉及主体从国有大行（农行湖北 300 万）、股份行（浦发、交行、招商、广发）到农商行／村镇银行，<strong>呈全链条覆盖</strong>。单笔最大为杭州银行 <strong>975 万元</strong>。</div>
   </div>
 </div>
 
@@ -238,30 +255,94 @@ th:first-child,td:first-child{text-align:left}
   <div class="section-body">
     <div class="note">全月主线：与"催收端"整治形成<strong>双向清理</strong>——一边打非法催收，一边打反催收／代理维权／信息贩卖等黑灰产。</div>
     <div class="item"><div class="it-h"><span class="tag red">反催收</span>警企协同打击非法代理维权</div><div class="it-b">广发信用卡协助警方捣毁佛山一家"反催收"黑灰产公司，<strong style="color:#c62828">抓获 20 余人</strong>（9/10）；兴业银行杭州分行警银联动跨省打掉金融黑灰产团伙 <strong style="color:#c62828">30 余人</strong>（9/9）；<strong>兴业消金联合嘉银科技</strong>配合上海刑侦总队及长宁分局破获"假维权、真敲诈"非法代理维权案（9/28）；招联消金警企协同打击"代理维权"类黑灰产，36 人被抓、<strong>24 人已判决</strong>（9/22，互金协会宣教案例）。</div></div>
-    <div class="item"><div class="it-h"><span class="tag orange">监管侧</span>多地监管与银行同步出手</div><div class="it-b">北京金融监管局发布风险提示，警示"代理维权""债务减免"非法中介 <strong>5 类套路</strong>（9/9）；宁夏金融监管局发布《防范不正当反催收乱象风险提示》（9/28）；人行攀枝花市分行与市监局联合发布《规范使用"征信""信用评级"字样的公告》（9/28）；交通银行信用卡中心年内收集黑产线索 <strong>2674 条</strong>、6 起移送公安、4 起已立案（9/10）。</div></div>
+    <div class="item"><div class="it-h"><span class="tag orange">监管侧</span>多地监管与银行同步出手</div><div class="it-b">北京金融监管局发布风险提示，警示"代理维权""债务减免"非法中介 <strong>5 类套路</strong>（9/9）；宁夏金融监管局发布《关于防范不正当反催收乱象的风险提示》（9/23）；人行攀枝花市分行与市监局联合发布《规范使用"征信""信用评级"字样的公告》（9/28）；交通银行信用卡中心年内收集黑产线索 <strong>2674 条</strong>、6 起移送公安、4 起已立案（9/10）。</div></div>
     <div class="item"><div class="it-h"><span class="tag green">数据黑产</span>侵犯公民个人信息</div><div class="it-b">山东滕州跨省捣毁特大侵犯公民个人信息黑产团伙——打掉团伙 2 个、抓获 <strong style="color:#c62828">28 人</strong>、查获信息 <strong style="color:#c62828">4000 余万条</strong>、涉案资金流水 600 余万元；核心卖家在青岛私设窝点、招募 50 余名闲散人员，搭建"获取—整理—分销—变现"链条（9/19 发布）。</div></div>
-    <div class="item"><div class="it-h"><span class="tag purple">行业研判</span>中国银联风险控制部总经理署名文章</div><div class="it-b">提出反催收黑灰产治理"<strong>三条走向</strong>"（9/10 刊发）。</div></div>
+    <div class="item">
+      <div class="it-h"><span class="tag purple">行业研判</span>中国银联风险控制部总经理王钰署名文章的「三条走向」</div>
+      <div class="it-b">
+        文章为《信用卡反催收黑灰产打击实战经验与治理机制研究》（《中国信用卡》2026-09-10），提出全链条长效治理机制。行业号将其概括为三条走向，逐条如下：<br>
+        <strong>① 线上引流要被掐断</strong>——禁止无资质主体发布"征信修复／停息挂账／债务优化／代理维权"类内容，违规账号下架、永久封禁，并跨平台共享黑名单。<br>
+        <strong>② 投诉考核要改</strong>——出台全国通用的恶意代理投诉甄别规则；经核实为黑灰产代办、重复无依据、捏造催收违规的工单，<strong>不再计入银行消保投诉考核扣分</strong>。<br>
+        <strong>③ 全行业要联网</strong>——搭建全国性反催收黑灰产信息共享平台，实现"一处作案、全行业受限"；由"金融监管＋公安＋网信＋清算机构＋协会＋银行"六方协同，叠加黑名单与征信联合惩戒。
+      </div>
+      <div class="src">来源：《中国信用卡》2026-09-10（作者系中国银联风险控制部总经理王钰）。注：「三条走向」为行业号「特殊资产清道夫」的转述概括，原文第三部分表述为"引流管控—消保平衡—产业规范—行业协同"四大维度</div>
+    </div>
   </div>
 </div>
 
-<!-- 甲方动态 -->
+<!-- 同业动态 -->
 <div class="section">
-  <div class="section-title announce">🏦 甲方动态</div>
+  <div class="section-title peer">🔭 同业动态 · 涉查方与正常经营方</div>
   <div class="section-body">
-    <div style="font-size:13px;font-weight:700;color:#c62828;margin-bottom:8px">甲方（银行 / 消金 / 汽金）动作</div>
-    <div class="item"><div class="it-b">· ⭐ <strong style="color:#c62828">山西银行晋城分行公告终止与合肥乾行（车贷贷后头部）的催收合作</strong>——本月最硬的一条"甲方切割"官方公告（9 月）<br>· <strong>重庆银行</strong>停止投放三款助贷类互联网贷款产品，仅保留"共同出资类（非助贷）"微粒贷（9/18）<br>· <strong>上海农商银行</strong>发布《债务催收政策要点（2026 年版）》（9/7）<br>· 深圳 8 家银行 9/16 集体公示第三方合作名单，合规披露常态化</div></div>
-    <div style="font-size:13px;font-weight:700;color:#c62828;margin:14px 0 8px">监管端人事 / 会议</div>
-    <div class="item"><div class="it-b">· <strong style="color:#c62828">国家金融监督管理总局广东监管局打击非法金融活动处处长杨谷方被查</strong>——涉嫌严重违纪违法，接受广东监管局纪委纪律审查＋广州市越秀区监委监察调查（9/22 廉洁广州发布）<br>· 金融监管总局联合央行、证监会召开金融消保监管联络员会议，会商金融纠纷多元化解（9/11）</div></div>
+    <div class="note">9 月同业出现明显<strong>分化</strong>：涉查方在收缩（分公司解散、甲方终止合作），未涉查方在<strong>扩张</strong>（密集开分公司、入围银行名单）；同时出现"<strong>出事—切割—仍在名单</strong>"三者并存的现象——甲方对"主体／分支机构"的责任边界处理并不一致。<strong>下表末列为信源性质，用于区分事实强度。</strong></div>
+    <table>
+      <tr><th>主体</th><th>情况</th><th>最新动态（8—9 月）</th><th>信源性质</th></tr>
+      <tr><td>深圳某头部机构<br>（2005 年成立 · 69 家分支 · 4000+ 人）</td><td>8 月初两职场同步清查、29 人刑拘</td><td>武汉／山东／南昌／佛山／上海等分公司<strong>原地解散</strong>，官网删除全部合作金融机构信息，投标停在 8/4；29 人是否批捕、高管是否到案<strong>均无公开信息</strong></td><td>行业自媒体<br>（官方未指名）</td></tr>
+      <tr><td>重庆信盟科技</td><td>2024.8 浙江警方带走 200 余人</td><td><strong>108 人</strong>被嵊州公安按恶势力组织移送起诉、14 人涉寻衅滋事，查实被害人 284 人；判决结果未公开；<strong>9/8 仍出现在马上消费 135 家合作催收名单内</strong></td><td>媒体＋<br>甲方公告</td></tr>
+      <tr><td>合肥乾行</td><td>池州分部 9/3 被突击</td><td>9 月 <strong>山西银行晋城分行公告终止与其车贷催收合作</strong>；主体存续、23 家分公司、参保 530 人</td><td><strong>官方公告</strong></td></tr>
+      <tr><td>深圳万乘（金华分公司）</td><td>2026.3.28 磐安警方带走百余人、查实非法公民信息 10 万+ 条</td><td>金华合作行终止，但 <strong>9/22 上海银行委外催收入围名单中"深圳万乘联合投资"仍在列</strong></td><td><strong>官方招投标</strong></td></tr>
+      <tr><td>安徽玉臻集团</td><td>9 月初合肥、淮南等地被查</td><td>工商仍存续，<strong>无官方通报、无后续披露</strong></td><td>仅行业自媒体</td></tr>
+      <tr><td>深圳金润吉</td><td>未见被查</td><td><strong>扩张</strong>：8/19 新增肇庆分公司、9/19 新增梅州分公司，9/22—23 入围上海银行委外催收</td><td>工商＋<br>官方招投标</td></tr>
+      <tr><td>深圳骅富 / 中嘉信用</td><td>未见被查</td><td>骅富 9/22 入围上海银行；中嘉 8—9 月工商正常、参保 85 人</td><td>官方招投标</td></tr>
+    </table>
+    <div class="note" style="margin-top:12px">📌 末列"信源性质"用于区分事实强度：标「<strong>官方公告／官方招投标</strong>」者为可核事实；标「<strong>行业自媒体</strong>」者未经官方通报，仅作线索参考。</div>
   </div>
 </div>
 
-<!-- 政策与自律 -->
+<!-- 甲方动态与行业数据 -->
+<div class="section">
+  <div class="section-title industry">🏦 甲方动态与行业数据</div>
+  <div class="section-body">
+    <div style="font-size:13px;font-weight:700;color:#c62828;margin-bottom:8px">一、甲方动作（银行 / 消金 / 汽金 / 平台）</div>
+    <div class="item"><div class="it-b">
+      · <strong style="color:#c62828">山西银行晋城分行</strong>发布公告，终止与合肥乾行（车贷贷后）的催收合作<br>
+      · <strong>建设银行宁波市分行</strong>委外催收中标结果更正，取消深圳市深巨元信用咨询的中标资格（9/8）<br>
+      · <strong>重庆银行</strong>停止投放三款助贷类互联网贷款产品，仅保留"共同出资类（非助贷）"微粒贷（9/18）<br>
+      · <strong>青岛银行</strong>在业绩说明会表示将"主动清退互联网合作类消费贷款业务"（9/29 报道，上市行首家）<br>
+      · <strong>上海农商银行</strong>发布《债务催收政策要点（2026 年版）》（9/7）；<strong>招商银行</strong>官网发布《债务催收管理制度要点（2026 年版）》（9/28）<br>
+      · <strong>盛银消费金融</strong>公告委托催收机构信息（<strong>26 家</strong>，含电话与委托有效期，9/28）<br>
+      · <strong>上海银行</strong>零售、信用卡委外催收入围 <strong>29 家</strong>采购结果公示（9/22）；<strong>中信银行信用卡中心</strong>逾期催收外包 22 家入围候选人公示（9/2）<br>
+      · <strong>邮储银行</strong>公开 48 个个贷回访与催收官方电话（9/27）<br>
+      · <strong>工商银行聊城分行</strong>成立"零售不良司法攻坚专项工作组"（9/22）；<strong>农业银行建昌县支行</strong>、<strong>山西浮山农商银行</strong>与当地法院共建清收工作专班（9/23、9/4）；<strong>黎城农商银行</strong>开展集中清收专项、纪委设督导小组（9/16）<br>
+      · 自营内催扩编：<strong>兴业消费金融</strong>上海招"自营贷款 45 天内催收"（明示内部自催团队，9/17）；<strong>中原消费金融</strong>武汉招内催催收员／组长（9/15）<br>
+      · <strong>靖江农商银行</strong>已核销不良委外清收项目因报名不足中止（9/9）
+    </div></div>
+    <div style="font-size:13px;font-weight:700;color:#c62828;margin:16px 0 8px">二、行业数据（有对比变化者）</div>
+    <div class="item"><div class="it-b">
+      · <strong>委外名单持续瘦身</strong>：<strong>微众银行</strong>合作催收机构 320 家（2025.9）→ 167 家（2026.7）→ <strong>约 160 家</strong>（8/12）——留存结构中<strong>律所 59、调解中心 11、常规催收仅 61 家</strong>；<strong>招联消金 18→5 家</strong>；锡商 16→14、金城 32→27、华瑞 16→15<br>
+      · <strong>委外招标转"不保底＋阶梯限价＋回款率分档"</strong>：农行黑龙江分行按 <strong>M 值阶梯限价</strong>（M2 4% → 2 年以上 20%，9/23）；邮储重庆分行小额贷费率 4.2%—5.3%、律所入围（9/16）；<strong>云南红塔银行西双版纳分行三家入围全为律所</strong>（9/17）<br>
+      · <strong>M1/M2 禁委外</strong>（3/10 起持牌消金逾期 60 天内不得委外）——砍掉外包<strong>超六成案量</strong><br>
+      · <strong>不良处置供给放量、价格走低</strong>：银登中心 9/17—22 一周挂牌 <strong>83 包、未偿本金 196.57 亿元（环比 +50%）</strong>，信用卡占 73.57%；平均起拍价/本金 <strong>5.48%</strong>（上周期 6.69%）<br>
+      · <strong>资产质量</strong>：工行行长刘珺称上半年安排 <strong>819 亿元核销</strong>——"不贪图透支未来的虚增，而求出清当下的真实"；招行 6 月末零售不良 1.16%（+0.1pct）；中泰证券：上半年零售不良率较年初 +16bp 至 1.52%<br>
+      · ⭐ <strong>经济观察报</strong>：某城商行 <strong>7 月底以来"电话＋上门"回款率不足 30%</strong>，8 月下旬排查<strong>约 25% 逾期户失联</strong>
+    </div></div>
+  </div>
+</div>
+
+<!-- 政策自律 -->
 <div class="section">
   <div class="section-title policy">📋 政策 / 自律 / 部署</div>
   <div class="section-body">
-    <div class="item"><div class="it-h">自律规范与行业标准</div><div class="it-b">· <strong style="color:#c62828">五家协会联合发布《个人贷款业务明示综合融资成本自律规范》</strong>，发布之日起施行（9/18）<br>· 中国互联网金融协会发布<strong>第二期规范互联网贷款营销 7 条举措</strong>，度小满／蚂蚁／腾讯／京东科技／抖音等成员单位带头执行（9/10）；另召开互联网助贷业务规范发展座谈会（9/5）<br>· 安徽四部门联合印发通知：规范金融类短信和电话营销催收行为（9/8）</div></div>
-    <div class="item"><div class="it-h">新规与执行</div><div class="it-b">· <strong style="color:#c62828">《金融产品网络营销管理办法》9 月 30 日施行</strong>，平台端同步开展排查整改（9/15 报道）<br>· 助贷新规落地近一年，配套"补丁"讨论要点涉及催收：优先由银行自主开展、委外机构不得与助贷平台关联（9/22）</div></div>
-    <div class="item"><div class="it-h">扫黑除恶部署与举报机制</div><div class="it-b">· <strong>公安部</strong>部署深化扫黑除恶专项斗争再推进，"非法催收""套路贷"列打击重点、涉黑涉恶"软暴力化"（9/28）<br>· <strong>内蒙古出台举报奖励办法</strong>，将"非法催收、套路贷、人肉开盒"列入举报范围（9/28）<br>· <strong>湖南省公安厅</strong>发布"十类新型黑恶犯罪"系列图解，<strong>软暴力催收列第一类</strong>（9/16）；<strong>山西省公安厅</strong>公开征集涉黑恶犯罪线索，软暴力催收列十类新型黑恶首类（9/17）<br>· 广东省公安厅部署未来 2 个月全面从严社会面打击整治，明确要求深圳"全面推进社会面清查打击整治"（9/15）<br>· 最高检披露深化扫黑除恶专项检察数据，并首次单独披露"非法催收"批捕／起诉口径（9/8、9/29）</div></div>
+    <div class="item"><div class="it-h">一、监管文件与规范</div><div class="it-b">
+      · <strong style="color:#c62828">《金融产品网络营销管理办法》9 月 30 日施行</strong>，平台端同步开展排查整改（9/15 报道）<br>
+      · <strong>八部门《关于金融支持服务业扩能提质的指导意见》</strong>（央行、金融监管总局等，9/28）——明确"<strong>严防违规获取个人金融信息</strong>""整治诱导过度借贷、非法高息放贷""完善多元化解机制"<br>
+      · 《小型个人信息处理者个人信息保护简化措施规定》（国家网信办、公安部，<strong>9/1 施行</strong>）<br>
+      · 助贷新规落地近一年，配套"补丁"讨论要点涉及催收：优先由银行自主开展、委外机构不得与助贷平台关联（9/22）<br>
+      · <strong>安徽四部门</strong>联合印发通知，规范金融类短信和电话营销催收行为（9/8）
+    </div></div>
+    <div class="item"><div class="it-h">二、协会自律</div><div class="it-b">
+      · <strong style="color:#c62828">五家协会联合发布《个人贷款业务明示综合融资成本自律规范》</strong>，发布之日起施行（9/18）<br>
+      · 中国互联网金融协会发布<strong>第二期规范互联网贷款营销 7 条举措</strong>，度小满／蚂蚁／腾讯／京东科技／抖音等成员单位带头执行（9/10）；另召开互联网助贷业务规范发展座谈会（9/5）<br>
+      · 中国银行业协会《金融机构个人消费类贷款催收工作指引》<strong>2026-01-30 发布并即日施行</strong>（同时废止 2021 版信用卡催收指引）；<strong>9 月无修订、无配套新文</strong>
+    </div></div>
+    <div class="item"><div class="it-h">三、专项部署与举报机制</div><div class="it-b">
+      · <strong>公安部</strong>部署深化扫黑除恶专项斗争再推进，"非法催收""套路贷"列打击重点、涉黑涉恶"软暴力化"（9/28）<br>
+      · <strong>内蒙古出台举报奖励办法</strong>，将"非法催收、套路贷、人肉开盒"列入举报范围（9/28）<br>
+      · <strong>湖南省公安厅</strong>发布"十类新型黑恶犯罪"系列图解，<strong>软暴力催收列第一类</strong>（9/16）；<strong>山西省公安厅</strong>公开征集涉黑恶犯罪线索，软暴力催收列十类新型黑恶首类（9/17）<br>
+      · <strong>广东省公安厅</strong>部署未来 2 个月全面从严社会面打击整治，明确要求深圳"全面推进社会面清查打击整治"（9/15）<br>
+      · <strong>最高法</strong> 8/28 组织 11 省 12 家法院集中宣判 12 件涉黑恶案，含天津蓟州高利放贷＋"软暴力"催收非法债务案（纠集者判 4 年 10 个月）<br>
+      · <strong>最高检</strong>披露深化扫黑除恶专项检察数据，首次单独披露"非法催收"批捕／起诉口径（9/8、9/29）
+    </div></div>
   </div>
 </div>
 
@@ -280,52 +361,20 @@ th:first-child,td:first-child{text-align:left}
   </div>
 </div>
 
-<!-- 同业动态 -->
-<div class="section">
-  <div class="section-title peer">🔭 同业动态 · 出险方与未出险方</div>
-  <div class="section-body">
-    <div class="note">9 月同业出现明显<strong>分化</strong>：出险方在收缩（分公司解散、甲方终止合作），未出险方在<strong>扩张</strong>（密集开分公司、入围银行名单）。同时出现"<strong>出事—切割—仍在名单</strong>"三者并存的现象——甲方对"主体／分支机构"的责任边界处理并不一致。</div>
-    <table>
-      <tr><th>主体</th><th>原事件</th><th>最新动态（8—9 月）</th></tr>
-      <tr><td>湖南永雄（长沙）</td><td>2023.4 安徽警方跨省带走 179 人</td><td>已改名"湖南永雄裕邦智能科技"，<strong>40 家分支机构全部注销、全面停业</strong>、参保降至个位数；2026.3 被长沙银行追偿 3472 万元、公司自认无力偿还；<strong>刑案截至 9 月仍无公开宣判</strong></td></tr>
-      <tr><td>深圳某头部机构<br>（2005 年成立 · 69 家分支 · 4000+ 人）</td><td>8 月初两职场同步清查、29 人刑拘、涉案约 1000 万</td><td>武汉／山东／南昌／佛山／上海等分公司<strong>原地解散</strong>，官网删除全部合作金融机构信息，投标停在 8/4；29 人是否批捕、高管是否到案<strong>均无公开信息</strong></td></tr>
-      <tr><td>重庆信盟科技</td><td>2024.8 浙江警方带走 200 余人</td><td><strong>108 人</strong>被嵊州公安按恶势力组织移送起诉、14 人涉寻衅滋事，查实被害人 284 人；判决结果未公开；<strong>9/8 仍出现在马上消费 135 家合作催收名单内</strong></td></tr>
-      <tr><td>合肥乾行</td><td>池州分部 9/3 被突击</td><td>⭐ <strong>9 月山西银行晋城分行公告终止与其车贷催收合作</strong>（官方公告）；主体存续、23 家分公司、参保 530 人</td></tr>
-      <tr><td>深圳万乘（金华分公司）</td><td>2026.3.28 磐安警方带走百余人、查实非法公民信息 10 万+ 条</td><td>金华合作行终止，但 <strong>9/22 上海银行委外催收入围名单中"深圳万乘联合投资"仍在列</strong>（主体存续、仍在投标）</td></tr>
-      <tr><td>安徽玉臻集团</td><td>9 月初合肥、淮南等地被查</td><td>工商仍存续，<strong>无官方通报、无后续披露</strong></td></tr>
-      <tr><td>深圳金润吉</td><td>未见被查</td><td><strong>扩张</strong>：8/19 新增肇庆分公司、9/19 新增梅州分公司，9/22—23 入围上海银行委外催收</td></tr>
-      <tr><td>深圳骅富 / 中嘉信用</td><td>未见被查</td><td>骅富 9/22 入围上海银行；中嘉 8—9 月工商正常、参保 85 人</td></tr>
-      <tr><td>招银云创</td><td>网传"外包催收被查"</td><td><strong>查无任何官方信息</strong>，工商正常、9 月仍有新中标 → 传闻不成立</td></tr>
-    </table>
-  </div>
-</div>
-
-<!-- 甲方动作与行业数据 -->
-<div class="section">
-  <div class="section-title industry">📊 甲方动作与行业数据（指标下滑后的应对）</div>
-  <div class="section-body">
-    <div class="item"><div class="it-h">委外招标：转向"不保底 + 阶梯限价 + 回款率分档"</div><div class="it-b">· 农行黑龙江分行（9/23）：中标 ≤5 家、<strong>采分 M 值阶梯限价</strong>——M2 4%／M3 5%／M4 6%／M5-6 7.5%／M6-1 年 11%／1-2 年 17.5%／2 年以上 20%<br>· 邮储重庆分行小额贷（逾期 31—70 天）中标费率 4.2%—5.3%、<strong>律所／法律顾问公司入围</strong>；河北分行信用卡上门清收 220—240 元/户＋M 值分档佣金<br>· 柳州银行、工行海南分行按"回款率达标／未达标"两档付费；<strong>云南红塔银行西双版纳分行三家入围全为律所</strong></div></div>
-    <div class="item"><div class="it-h">委外名单：继续瘦身，结构"律所 / 调解化"</div><div class="it-b">· 微众银行合作催收机构 320 家 → 约 <strong style="color:#c62828">161 家</strong>，留存中<strong>律所 59、调解中心 11、常规催收仅 61 家</strong>；招联消金 18→5 家；锡商 16→14、金城 32→27、华瑞 16→15</div></div>
-    <div class="item"><div class="it-h">自营 + AI 双线挤压外包空间</div><div class="it-b">· 3/10 起持牌消金逾期 60 天内（M1/M2）禁委外——<strong>砍掉外包超六成案量</strong><br>· 自营扩编：兴业消金招"催收策略岗（AI 分层＋话术模型）"；京东科技 9/10 招信控团队负责人（组建 20 人以上一线团队）<br>· AI 上线：马上消费"实时拦截＋离线大模型复检"；蚂蚁消金 AI 辅助调解员 2025 年化解 3.6 万件、化解率 99%</div></div>
-    <div class="item"><div class="it-h">不良资产处置：供给放量、价格继续走低、通道收紧</div><div class="it-b">· 银登中心 9/17—22 一周挂牌 <strong>83 包、未偿本金 196.57 亿元（环比 +50%）</strong>，信用卡占 73.57%；账龄 4.71 年，平均起拍价/本金 <strong>5.48%</strong>（上周期 6.69%）<br>· 蚂蚁消金 9/10—11 三期 36.45 亿元本息、14.78 万户；上半年个贷不良平均折扣率 4.10%<br>· <strong>7/24 重庆富城 AMC 因变相出借牌照被责令停业整顿</strong>——《地方资产管理公司监督管理暂行办法》施行以来<strong>全国首例</strong></div></div>
-    <div class="item"><div class="it-h">资产质量与高管口径（官方表述）</div><div class="it-b">· <strong>工行行长刘珺</strong>：上半年安排 <strong>819 亿元核销</strong>——"不贪图透支未来的虚增，而求出清当下的真实"<br>· 交行 3 月起启动<strong>零售资产质量提升专项行动</strong>；邮储处置表内不良本息 379.07 亿元；平安上半年收回不良 201.42 亿元（98.4% 现金）<br>· 招行徐明杰：6 月末零售不良 1.16%（+0.1pct）；中泰证券：上半年零售不良率较年初 +16bp 至 1.52%<br>· ⭐ <strong>经济观察报</strong>：某城商行 <strong>7 月底以来电话＋上门回款率不足 30%</strong>，8 月下旬排查<strong>约 25% 逾期户失联</strong></div></div>
-  </div>
-</div>
-
 <!-- Q4 前瞻 -->
 <div class="section">
   <div class="section-title q4">🧭 Q4 前瞻 · 合规与指标如何兼顾</div>
   <div class="section-body">
-    <div class="note">行业共识正从"<strong>能不能催</strong>"转向"<strong>能不能合规地把钱收回来</strong>"。三条主线：① 考核去"唯回款率"；② 回收出口从电催迁往司法／调解；③ 合规资质变成入场券。<strong>以下为行业观点，均注明提出方。</strong></div>
+    <div class="note">行业共识正从"<strong>能不能催</strong>"转向"<strong>能不能合规地把钱收回来</strong>"。三条主线：① 考核去"唯回款率"；② 回收出口从电催迁往司法／调解；③ 合规资质变成入场券。<strong>以下为行业观点，逐条注明提出方与原文链接。</strong></div>
     <table>
-      <tr><th>观点主张</th><th>提出方</th></tr>
-      <tr><td><strong>考核重构</strong>：合规过程指标权重 ≥ 结果指标，系统性下调回收率基准</td><td>催收行业分析自媒体</td></tr>
-      <tr><td>把"<strong>司法回收</strong>"从兜底<strong>重定价为"低概率、高延迟"渠道</strong>，据此重排贷后资源；中债资信已在信用卡不良 ABS 评级中<strong>下调回收参数</strong></td><td>催收行业分析自媒体</td></tr>
-      <tr><td><strong>AI 质检强制化</strong>：全量录音、全量质检应成硬要求</td><td>同上</td></tr>
-      <tr><td>"<strong>合规从成本项变准入项</strong>"：招标将把"近三年无暴力催收处罚"列为实质门槛；打法＝"<strong>电催做筛、法催做收</strong>"，KPI 改为<strong>回款率 × 合规分 × 投诉反比 × 和解率</strong></td><td>中研普华（研究机构）</td></tr>
-      <tr><td><strong>调解化最健康但难过"财务关"</strong>：成本为传统催收 <strong>3—5 倍</strong>、回款率仅约<strong>六成</strong></td><td>行业自媒体转述素喜智研</td></tr>
-      <tr><td>监管已<strong>从自律升至国标／刑法</strong>，催收非法债务罪高压</td><td>广东卓建律师事务所</td></tr>
-      <tr><td><strong>10 月催收"更频繁"属节奏调整而非政策升级</strong>——源于年末回款压力（失联、长期未沟通、大额账户重新分层优先处理）</td><td>行业自媒体</td></tr>
+      <tr><th>观点主张</th><th>提出方 / 来源</th></tr>
+      <tr><td><strong>考核重构</strong>：合规过程指标权重 ≥ 结果指标，系统性下调回收率基准</td><td>今日头条《催收公司倒了，坏账去哪了？四道坎，正在一个一个压过来》<br><a href="https://www.toutiao.com/article/7688365726519869952/" target="_blank">原文</a></td></tr>
+      <tr><td>把"<strong>司法回收</strong>"从兜底<strong>重定价为"低概率、高延迟"渠道</strong>，据此重排贷后资源；中债资信已在信用卡不良 ABS 评级中<strong>下调回收参数</strong></td><td>同上<br><a href="https://www.toutiao.com/article/7688365726519869952/" target="_blank">原文</a></td></tr>
+      <tr><td><strong>AI 质检强制化</strong>：全量录音、全量话术质检应成硬性要求</td><td>同上<br><a href="https://www.toutiao.com/article/7688365726519869952/" target="_blank">原文</a></td></tr>
+      <tr><td>"<strong>合规从成本项变准入项</strong>"：招标将把"近三年无暴力催收处罚"列为实质门槛；打法＝"<strong>电催做筛、法催做收</strong>"，KPI 改为<strong>回款率 × 合规分 × 投诉反比 × 和解率</strong></td><td>中研普华《阳光化转型期：2026—2030 年中国催收机构行业竞争格局与投资趋势前瞻》（2026-08-04）<br><a href="https://www.chinairn.com/hyzx/20260804/091941633.shtml" target="_blank">原文</a></td></tr>
+      <tr><td><strong>调解化最健康但难过"财务关"</strong>：成本为传统催收 <strong>3—5 倍</strong>、回款率仅约<strong>六成</strong></td><td>今日头条《催收转型三条路…》转述素喜智研（苏筱芮）<br><a href="https://www.toutiao.com/article/7684828075355341318" target="_blank">原文</a></td></tr>
+      <tr><td>监管已<strong>从自律升至国标／刑法</strong>，催收非法债务罪高压</td><td>广东卓建律师事务所《催收行业的法律风险与合规重构（下篇）》<br><a href="https://www.lawzj.cn/news_view.aspx?Fid=t2:5:2&amp;Id=1704&amp;TypeId=5" target="_blank">原文</a></td></tr>
+      <tr><td><strong>10 月催收"更频繁"属节奏调整而非政策升级</strong>——源于年末回款压力（失联、长期未沟通、大额账户重新分层优先处理）</td><td>上海热线<br><a href="https://m.online.sh.cn/flzxinfo/yuqikp/1531236.html" target="_blank">原文</a></td></tr>
     </table>
   </div>
 </div>
@@ -334,12 +383,56 @@ th:first-child,td:first-child{text-align:left}
 <div class="section">
   <div class="section-title tool">🧰 新作业方式 · 9 月观察</div>
   <div class="section-body">
-    <div class="item"><div class="it-h"><span class="tag teal">AI 化</span></div><div class="it-b">· <strong>蚂蚁消金</strong>：行业首个驻场调解工作站＋AI 辅助调解员，2025 年 AI 辅助化解 3.6 万件、化解率 99%，"江小豚"使调解效率 +27%（人民网 9/9）<br>· <strong>马上消金</strong>：实时敏感词拦截＋离线大模型复检"双质检"，大模型反向优化 AI 话术（9/3）<br>· 智能函件送达：武汉智品堂"地址模型＋EMS 专递＋律师函自动工厂"，<strong>签收率 75%</strong>（行业约 30%）<br>· "AI 反制 AI"：分期乐黑灰产识别智能体（分析 0.5 天 → 几分钟，效率 +90%）</div></div>
-    <div class="item"><div class="it-h"><span class="tag purple">司法化</span>非诉快执批量分流</div><div class="it-b">· 支付令批量分流＋要素式判决书：湖北阳新法院 12 起支付令生效 11 起；13 案合并 1 小时审完<br>· <strong>赋强公证"调解—公证—执行"闭环</strong>：泗县公证处（农／工／中／邮储）2000 余件、6.3 亿元<br>· 追偿权类型化治理：四川石棉法院"诉前调解＋司法确认＋电子送达"，收案同比 <strong>−26.45%</strong>、调撤率 62.07%</div></div>
-    <div class="item"><div class="it-h"><span class="tag green">调解化</span>金融共享法庭</div><div class="it-b">· 东莞（8/21 揭牌，广东全省首家地级市）、乐山（35 件／1299.9 万元、成功率 80%、履约 100%），"<strong>示范判决＋批量调解</strong>"<br>· ⚠️ <strong>边界警示</strong>：假"金融纠纷调解中心"从事非法反催收被以<strong>非法经营罪</strong>侦办（山西大同，全国首例）——与本月铜鼓"诉前调解中心"案互为印证</div></div>
-    <div class="item"><div class="it-h"><span class="tag orange">分层与前移</span></div><div class="it-b">· <strong>M1/M2 禁委外、仅 M3+ 适度委外</strong>；催收费用占营收或从 20.65% 升至 30%+<br>· <strong>合规失联修复</strong>：三重授权＋虚拟号码隔离（国标 GB/T 45251—2025），机构全程不见真实号码</div></div>
-    <div class="item"><div class="it-h"><span class="tag red">经营转型</span></div><div class="it-b">· 催收转"<strong>买包自持</strong>"＋组建"法催事业部"＋律师化；行业集中度 CR5 不足 10% → 2028 年预计 <strong>25—30%</strong><br>· 不良密集出清并附加"<strong>受让方不得暴力催收</strong>"条款（银登中心、南京银行、民生信用卡）<br>· 按结果付费／阶梯限价、不承诺业务量；出海设本地催收团队（印尼／泰国／墨西哥）</div></div>
-    <div class="note" style="margin-top:12px;border-left-color:#00838f">⭐ 最值得关注的三个新作业方式：① <strong>支付令＋赋强公证等非诉快执批量分流</strong>（电催受限后最硬的债权实现通道）；② <strong>共享法庭＋调解＋司法确认闭环</strong>（把"减免＋分期"做成可强制执行协议）；③ <strong>M1/M2 强制自营＋AI 全量质检</strong>（直接改写业务盘与人力结构）。</div>
+    <div class="item">
+      <div class="it-h"><span class="tag teal">AI 化</span>把人工环节替换为大模型辅助</div>
+      <div class="it-b">
+        · <strong>蚂蚁消金</strong>：设行业首个驻场调解工作站＋AI 辅助调解员，2025 年 AI 辅助化解 <strong>3.6 万件</strong>、化解率 99%，"江小豚"使调解效率 +27%<br>
+        · <strong>马上消费</strong>：<strong>实时敏感词拦截 ＋ 离线大模型复检</strong>双质检，并用大模型反向优化 AI 话术（9/3）<br>
+        · <strong>智能函件送达</strong>：武汉智品堂以"地址模型 ＋ EMS 专递 ＋ 律师函自动工厂"，<strong>签收率 75%</strong>（行业约 30%）<br>
+        · <strong>"AI 反制 AI"</strong>：分期乐黑灰产识别智能体（单次分析 0.5 天 → 几分钟，效率 +90%）
+      </div>
+      <div class="src">来源：<a href="https://finance.people.com.cn/n1/2026/0910/c1004-40796176.html" target="_blank">人民网财经 2026-09-10</a>｜<a href="http://qx.tynews.com.cn/system/2026/09/03/031064304.shtml" target="_blank">太原日报 2026-09-03</a>｜<a href="https://www.cet.com.cn/wzsy/cyzx/10546970.shtml" target="_blank">中国经济新闻网 2026-09-09</a></div>
+    </div>
+    <div class="item">
+      <div class="it-h"><span class="tag purple">司法化</span>不走诉讼，用「非诉快执」批量拿执行依据</div>
+      <div class="it-b">
+        核心是<strong>绕开漫长的诉讼程序、直接取得可强制执行的依据</strong>，把大量小额分散的债权批量转化为可执行文书。三条成熟做法：<br>
+        · <strong>支付令</strong>：法院依债权人申请直接向债务人发出付款命令，债务人 15 日内不提异议即生效、可直接申请强制执行——湖北阳新法院 12 起支付令生效 11 起，13 案合并 1 小时审完<br>
+        · <strong>赋强公证</strong>：签借款合同时即办理"赋予强制执行效力的债权文书公证"，逾期后无需起诉、直接申请法院执行——安徽泗县公证处与农／工／中／邮储合作，累计办理 <strong>2000 余件、6.3 亿元</strong><br>
+        · <strong>追偿权类型化治理</strong>：四川石棉法院以"诉前调解＋司法确认＋电子送达"批量处理，<strong>收案同比 −26.45%</strong>、调撤率 62.07%
+      </div>
+      <div class="src">来源：<a href="https://yxxfy.hbfy.gov.cn/DocManage/ViewDoc?docId=fc31c266-ee3e-4504-8d80-05b20666434c" target="_blank">阳新县人民法院</a>｜<a href="https://www.sixian.gov.cn/public/25142/164114521.html" target="_blank">泗县人民政府</a>｜<a href="http://www.scfz.org/fayuan/35/130503.html" target="_blank">四川法制网</a></div>
+    </div>
+    <div class="item">
+      <div class="it-h"><span class="tag green">调解化</span>金融共享法庭：「示范判决 ＋ 批量调解」</div>
+      <div class="it-b">
+        由法院在金融机构或行业组织设立巡回审判点，把<strong>调解、司法确认、执行</strong>串成一条链——先出一个"示范判决"定标准，再据此批量调解同类案件，调解协议当场司法确认后即可强制执行。<br>
+        · <strong>东莞</strong>金融共享法庭 8/21 揭牌（广东全省首家地级市）<br>
+        · <strong>乐山</strong>共享法庭处理 35 件／1299.9 万元，成功率 80%、履约率 100%；信用卡近 10 万元案件可实现"减免＋分期"当场司法确认<br>
+        · ⚠️ <strong>边界警示</strong>：假"金融纠纷调解中心"从事非法反催收已被以<strong>非法经营罪</strong>侦办（山西大同，全国首例；该条暂未见可核链接）——与本月铜鼓"诉前调解中心"案互为印证
+      </div>
+      <div class="src">来源：<a href="https://www.dgcourt.gov.cn/News/Show.asp?id=5918" target="_blank">东莞市中级人民法院</a>｜<a href="https://www.leshan.cn/html/50A6B0C045B924BC/2026/09/16/view_4D1A2E3EE64ADD93.html" target="_blank">乐山新闻网 2026-09-16</a></div>
+    </div>
+    <div class="item">
+      <div class="it-h"><span class="tag orange">分层前移</span>催收环节整体向「账龄更早」的一端移动</div>
+      <div class="it-b">
+        「<strong>分层</strong>」指按<strong>逾期账龄</strong>把资产切成 M1／M2／M3+ 等层，各层用不同手段、不同团队、是否外包也各不相同；「<strong>前移</strong>」指<strong>把原本交给外包的早期账龄收回自营</strong>。9 月的具体表现：<br>
+        · <strong>M1／M2 禁止委外</strong>（3/10 起持牌消金逾期 60 天内不得委外）→ 早期账龄全部由甲方内催承接，直接砍掉外包超六成案量<br>
+        · 甲方随之<strong>扩编自营内催</strong>（兴业消金、中原消金招聘）；同时加强失联客户触达——<strong>合规失联修复</strong>须"三重授权＋虚拟号码隔离"，机构全程不见真实号码<br>
+        · 结果是外包市场<strong>只剩长账龄、低回收率资产</strong>，倒逼催收公司转向法催／调解／买包自持
+      </div>
+      <div class="src">来源：<a href="https://finance.ce.cn/bank12/scroll//202607/t20260724_3106357.shtml" target="_blank">中国经济网转述界面新闻 2026-07-24（M1/M2 禁委外）</a>；失联修复具体做法暂未见可核官方链接</div>
+    </div>
+    <div class="item">
+      <div class="it-h"><span class="tag red">经营转型</span>从「接单做催收」转向「持包 / 律师化」</div>
+      <div class="it-b">
+        · 催收公司转<strong>"买包自持"</strong>＋组建"法催事业部"＋律师化；行业集中度 CR5 不足 10% → 2028 年预计 <strong>25—30%</strong>（中研普华）<br>
+        · 不良资产出清时附加"<strong>受让方不得暴力催收</strong>"条款（银登中心、南京银行、民生信用卡）<br>
+        · 按结果付费／阶梯限价、不承诺业务量；部分机构出海设本地催收团队（印尼／泰国／墨西哥）
+      </div>
+      <div class="src">来源：<a href="https://www.chinairn.com/hyzx/20260804/091941633.shtml" target="_blank">中研普华 2026-08-04</a></div>
+    </div>
+    <div class="note" style="margin-top:12px;border-left-color:#00838f">⭐ 最值得关注的三个新作业方式：① <strong>支付令＋赋强公证等非诉快执批量分流</strong>（电催受限后的主要债权实现通道）；② <strong>共享法庭＋调解＋司法确认闭环</strong>（把"减免＋分期"做成可强制执行协议）；③ <strong>M1/M2 强制自营＋AI 全量质检</strong>（直接改写业务盘与人力结构）。</div>
   </div>
 </div>
 
@@ -347,43 +440,44 @@ th:first-child,td:first-child{text-align:left}
 <div class="section">
   <div class="section-title rumor">🗣️ 坊间线索 · 全月汇总</div>
   <div class="section-body">
-    <div class="note">以下来自行业号／社群爆料，未见官方印证，仅作线索记录。缩写字母为行业暗语，经比对推测。</div>
-    <div style="font-size:13px;font-weight:700;color:#c62828;margin-bottom:8px">被传被查 / 被带走（按时间）</div>
+    <div class="note">以下来自行业号／社群爆料，<strong>除注明「官方」者外均未见官方印证</strong>，仅作线索记录。缩写字母为行业暗语，经比对推测。排版按<strong>是否已推测出主体</strong>分组：已推测出的在前并标注「推测为」，未推测出的列后。</div>
+
+    <div style="font-size:13px;font-weight:700;color:#c62828;margin-bottom:6px">一、已推测出主体的线索</div>
+    <div style="margin-bottom:16px;font-size:13px;color:#555;line-height:2">
+      · <strong>迪科数金（亳州基地）</strong>被查｜9/8 圈内消息｜<span style="color:#90a4ae">点名，非推测</span><br>
+      · <strong>贵和（徐州分公司）</strong>被带走四十几人｜9/2 小道消息｜<span style="color:#90a4ae">点名，非推测</span><br>
+      · <strong>好分期</strong>｜9/30 铜鼓案收缴话术材料中出现"<strong>好分期合作方法律事务组</strong>"字样——<strong>涉甲方平台</strong>（运营主体＝北京微财科技有限公司／微财数科；助贷机构＝厦门好微金融科技；放贷主体＝重庆市黑卡小额贷款有限公司）｜⚠️ 系团伙<strong>话术自报</strong>，同图标注"换身份外包施压"，<strong>不能据此认定委托关系</strong><br>
+      · <strong>合肥乾行</strong>｜合肥系"某 X"池州分部被突击｜9/3 事件｜<strong>推测为合肥乾行</strong>（其池州分公司 2022 年注册、地址红森国际大厦）<br>
+      · <strong>合肥乾行瑶海分公司</strong>｜合肥瑶海区某"j"大楼一车贷公司被查｜9/23 自媒体号投稿｜<strong>推测为乾行瑶海分公司</strong>（楼宇指向中建大厦 13 层，同楼 8 层为玉臻集团）<br>
+      · <strong>平安系（融易佛山）</strong>｜佛山某车贷"内催"团队被带走百余人｜9/3 事件｜<strong>推测为平安融易佛山系</strong>（评论区指向）<br>
+      · <strong>锐拓</strong>｜某"T"催收公司 GZ 职场被端、一百多人被带走｜9/7｜<strong>或为锐拓</strong><br>
+      · <strong>天源迪科（阜阳分公司）</strong>被上门｜9/2 小道消息｜<strong>确定为天源迪科阜阳分公司</strong><br>
+      · <strong>芜湖金泰源</strong>（助贷公司）被端｜9/8 行业号投稿｜<span style="color:#90a4ae">点名，非推测</span><br>
+      · <strong>信元汇融</strong>｜九江沙河某"X"催收公司被端｜9/2｜<strong>推测可能为信元汇融</strong>
+    </div>
+
+    <div style="font-size:13px;font-weight:700;color:#c62828;margin-bottom:6px">二、尚未推测出主体的线索（按时间）</div>
     <div style="margin-bottom:14px">
       <span class="chip">昆山某催收公司员工被带走（9/1）</span>
-      <span class="chip">贵和徐州分公司被带走四十几人（9/2）</span>
-      <span class="chip">九江沙河某"X"被端 · 或为信元汇融（9/2）</span>
-      <span class="chip">阜阳分公司被上门 · 确定为天源迪科阜阳分公司（9/2）</span>
-      <span class="chip">合肥系"某X"池州分部被突击（9/3）</span>
-      <span class="chip">成都某贷后职场被检查（9/4）</span>
-      <span class="chip">佛山某车贷"内催"团队疑被带走 · 疑平安系（9/3—9/6）</span>
       <span class="chip">九江"CBA"催收公司被端（9/2）</span>
-      <span class="chip">河北邯郸某资产包公司被端（9/3）</span>
-      <span class="chip">某"T"催收公司 GZ 职场被端、百余人被带走（9/7）</span>
-      <span class="chip">上海现场带走约十人 · 楼宇经核为上海招商局大厦（9/7）</span>
-      <span class="chip">迪科数金亳州基地被查（9/8）</span>
-      <span class="chip">芜湖金泰源助贷公司被端（9/8）</span>
+      <span class="chip">河北邯郸某"某 A 资产包"公司被端（9/3）</span>
+      <span class="chip">成都某贷后职场被检查（9/4）</span>
+      <span class="chip">上海现场带走约十人 · 楼宇指向上海招商局大厦（9/7）</span>
       <span class="chip">江西上饶催车贷公司被端 · 15 人被带走、4 人留置（9/8）</span>
-      <span class="chip">江西赣州于都某催收公司被端 · 多地联动抓 14 人（9/9—9/10）</span>
+      <span class="chip">江西赣州于都某催收公司被端 · 多地联动抓 14 人（9/9）</span>
       <span class="chip">长沙某催收公司遭重庆警方突击 · 或为岳麓区／高新区（9/9）</span>
       <span class="chip">苏州某"C"催收公司分公司被端（9/11）</span>
       <span class="chip">深圳龙华汇海广场 21 楼某催收公司被查（9/14）</span>
       <span class="chip">深圳一天三家催收公司"总部"被查（9/14）</span>
       <span class="chip">宁夏石嘴山大武口"百人被带走"（9/21）</span>
-      <span class="chip">合肥瑶海区某"j"大楼被查 · 疑乾行瑶海分公司（9/23）</span>
     </div>
-    <div style="font-size:13px;font-weight:700;color:#c62828;margin-bottom:8px">地域 / 集群线索</div>
-    <div style="margin-bottom:14px">
-      <span class="chip">深圳 8—9 月持续清查（龙华、八卦岭多点）</span>
-      <span class="chip">安徽淮南产业园全被端</span>
-      <span class="chip">湛江多家被端＋甲方倒查 5 年</span>
-      <span class="chip">南昌"Z"挂涉黑、社保全员刑拘</span>
-    </div>
+
     <div style="padding:14px;background:#fafcfd;border:1px solid #e0e6ec;border-radius:10px">
-      <div style="font-size:14px;font-weight:700;color:#c62828;margin-bottom:8px">9 月坊间主线：从"传闻"转向"官方印证"</div>
+      <div style="font-size:14px;font-weight:700;color:#c62828;margin-bottom:8px">本月坊间特征</div>
       <div style="font-size:13px;color:#555;line-height:1.9">
-        本月多条坊间线索<strong>获得官方口径印证</strong>——合肥瑶海线索经楼宇与用工地址反查后指向中建大厦 8 层玉臻集团／13 层乾行瑶海分公司；深圳头部机构被查由业内传闻进入"分公司原地解散"的可核状态；佛山车贷内催被带走一条则由评论区逐步指向平安系。<br>
-        <strong>观察</strong>：本轮坊间爆料的可信度与可核性明显高于 8 月——8 月多为"某地某公司被端"的模糊指认，9 月则出现<strong>楼宇、楼层、分公司、社保人数</strong>等可交叉验证的具体坐标。
+        ① <strong>可核性提高</strong>——8 月多为"某地某公司被端"的模糊指认，9 月出现<strong>楼宇、楼层、分公司、社保人数</strong>等可交叉验证的具体坐标，多条线索已被逐级收窄到具体主体（见上组）。<br>
+        ② <strong>部分线索获官方口径印证后已移出坊间</strong>——如合肥乾行由"网传池州分部被突击"进入"甲方公告终止合作"的可核状态。<br>
+        ③ <strong>首次出现涉甲方的物证</strong>——铜鼓案收缴话术材料中点名平台（好分期），但性质为催收方<strong>自报身份</strong>，不构成委托关系证据。
       </div>
     </div>
   </div>
@@ -393,11 +487,10 @@ th:first-child,td:first-child{text-align:left}
 <div class="analysis">
   <h2>⚡ 最后</h2>
   <p><strong style="color:#c62828">收网端</strong>：9 月共新增披露收网案件 <strong>47 起</strong>，覆盖 20 个省（区、市），江西以 21 起居首（宜春、南昌、赣州为重）。与 8 月"全国第一轮集中收网一次交卷"不同，9 月呈<strong>省级战报与单案通报交替发布</strong>的常态化节奏；单案规模从 4 人至 230 人不等。手法上"软暴力催收"为绝对主流，并出现冒用"<strong>诉前调解中心</strong>""<strong>政府综合办事处</strong>"等公权力名义的新变种，以及"商品分期""租机"等新型放贷外衣。</p>
-  <p><strong style="color:#c62828">审判与处罚端</strong>：9 月判决密度明显高于 8 月，由"一次全国集中宣判"转为<strong>多点分散宣判</strong>（潍坊、银川、昌都、沈阳、吉林）；罪名向<strong>催收非法债务罪、侵犯公民个人信息罪</strong>细化；沈阳阮某某案一审 <strong>25 年</strong>为本月最重。最高检数据（批捕非法催收 17 件 63 人、起诉 10 件 25 人）显示，<strong>多数案件仍在侦查与审查起诉阶段</strong>，后续审判供给将持续。行政处罚方面，9 月 7 张涉贷后事由罚单中 <strong>5 张直接以「贷后管理不到位／不尽责」为案由</strong>，监管对贷后环节的问责同步加码。</p>
-  <p><strong style="color:#c62828">甲方端</strong>：遭遇 8—9 月指标下滑后，甲方动作集中在三处——<strong>委外名单继续瘦身</strong>（微众 320→161、招联 18→5）、<strong>招标改为不保底＋阶梯限价＋回款率分档并向律所倾斜</strong>、<strong>自营与 AI 双线挤压外包空间</strong>（M1/M2 禁委外砍掉超六成案量）。同时不良处置端供给放量、价格继续走低（银登一周挂牌 196.57 亿元、起拍价/本金降至 5.48%），通道业务被收紧（重庆富城 AMC 被责令停业整顿，全国首例）。</p>
-  <p><strong style="color:#c62828">黑灰产端</strong>：反催收与代理维权治理由"银行单点反击"转为"<strong>警企协同＋监管提示＋协会宣教</strong>"三线并进；数据黑产方面，滕州案查获公民信息 4000 余万条，显示催收上游的数据链条仍在大规模运转。</p>
-  <p><strong style="color:#c62828">同业端</strong>：出现明显的<strong>出险—切割—仍在名单</strong>三者并存现象。合肥乾行被甲方以官方公告终止合作，而万乘金华虽于 3 月出事、主体仍在上海银行入围名单内——甲方对"主体／分支机构"的责任边界处理并不一致；未出险方（金润吉等）则继续扩张。</p>
-  <p><strong style="color:#c62828">前瞻（Q4）</strong>：行业共识正从"能不能催"转向"<strong>能不能合规地把钱收回来</strong>"。三条主线可跟踪——考核去"唯回款率"、回收出口从电催迁往司法与调解、合规资质成为招标入场券。年末冲量与合规的张力、以及司法/调解路径的承接能力，将是 Q4 的主要观察点。</p>
+  <p><strong style="color:#c62828">审判与处罚端</strong>：9 月判决密度明显高于 8 月，由"一次全国集中宣判"转为<strong>多点分散宣判</strong>（潍坊、银川、昌都、沈阳、吉林）；罪名向<strong>催收非法债务罪、侵犯公民个人信息罪</strong>细化；沈阳阮某某案一审 <strong>25 年</strong>为本月最重。最高检数据（批捕非法催收 17 件 63 人、起诉 10 件 25 人）显示，<strong>多数案件仍在侦查与审查起诉阶段</strong>。行政处罚方面，<strong>「贷后管理不到位／不尽职」为绝对主案由</strong>（15 张贷后类罚单中 13 张直接以此表述），涉及主体从国有大行、股份行到农商行／村镇银行全链条覆盖，单笔最大为杭州银行 975 万元。</p>
+  <p><strong style="color:#c62828">甲方端</strong>：遭遇 8—9 月指标下滑后，甲方动作集中在三处——<strong>委外名单继续瘦身</strong>（微众 320→约 160、招联 18→5）、<strong>招标改为不保底＋阶梯限价＋回款率分档并向律所倾斜</strong>、<strong>自营与 AI 双线挤压外包空间</strong>（M1/M2 禁委外砍掉超六成案量）。不良处置端供给放量、价格继续走低（银登一周挂牌 196.57 亿元、起拍价/本金降至 5.48%），通道业务被收紧（重庆富城 AMC 被责令停业整顿，全国首例）。甲方对涉查机构的处理并不一致：<strong>合肥乾行被公告终止合作，而万乘金华仍在上海银行入围名单内</strong>。</p>
+  <p><strong style="color:#c62828">黑灰产端</strong>：反催收与代理维权治理由"银行单点反击"转为"<strong>警企协同＋监管提示＋协会宣教</strong>"三线并进；中国银联风险控制部总经理署名文章提出"掐引流、改考核、全行业联网"三条走向，指向<strong>从个案打击转向机制建设</strong>。数据黑产方面，滕州案查获公民信息 4000 余万条，显示催收上游的数据链条仍在大规模运转。</p>
+  <p><strong style="color:#c62828">前瞻（Q4）</strong>：行业共识正从"能不能催"转向"<strong>能不能合规地把钱收回来</strong>"。三条主线可跟踪——考核去"唯回款率"、回收出口从电催迁往司法与调解、合规资质成为招标入场券。年末冲量与合规的张力、以及司法／调解路径的承接能力，将是 Q4 的主要观察点。</p>
   <div style="margin-top:16px;padding-top:14px;border-top:1px dashed #e0e6ec">
     <div style="font-size:13px;color:#90a4ae;margin-bottom:8px">📂 往期回顾</div>
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px 14px;font-size:13px;color:#666">
